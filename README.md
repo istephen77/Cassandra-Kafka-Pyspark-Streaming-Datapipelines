@@ -2,7 +2,7 @@
 
 
 
-This project demonstrate how to setup developmen enviornment locally
+This project demonstrate how to setup development enviornment locally
 This is a repo help you to understand and launch Kafka cluster 
 
 

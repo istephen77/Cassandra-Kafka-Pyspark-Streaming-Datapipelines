@@ -1,0 +1,8 @@
+.vscode
+.cassandraWorkbench
+cassandra_data
+kafka_data
+zookeeper_data
+pyspark_data/employee_data
+*.log
+*.jsonc

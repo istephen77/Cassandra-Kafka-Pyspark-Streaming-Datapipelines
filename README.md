@@ -25,9 +25,9 @@ docker-compose down
 Install few extension in vscode to work with cassandra db
 1. Cassandra Workbench
 
-Create a keysapce with name "ineuron"
+Create a keysapce with name "cassandra_table"
 ```
-CREATE KEYSPACE ineuron
+CREATE KEYSPACE cassandra_table
 	WITH REPLICATION = {
 		'class': 'org.apache.cassandra.locator.SimpleStrategy',
 		'replication_factor': '3'

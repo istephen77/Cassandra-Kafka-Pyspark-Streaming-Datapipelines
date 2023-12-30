@@ -42,7 +42,7 @@ logging.basicConfig(
 
 
 #create spark session with cassandar configuration
-sparkSesison = (SparkSession.builder
+sparkSession = (SparkSession.builder
                  .config("spark.cassandra.connection.host","cassandra")
                  .config("spark.cassandra.auth.username","cassandra")
                  .config("spark.cassandra.auth.password","cassandra")
@@ -73,7 +73,7 @@ def processEachInterval(df:DataFrame,epoch_id):
         df.write.mode("append").parquet(dataSink)
 
 if __name__=="__main__":
-    df = (sparkSesison
+    df = (sparkSession
     .readStream
     .format("kafka")
     .option("kafka.bootstrap.servers",KAFKA_BOOTSTRAP_SERVER)
